@@ -1,0 +1,367 @@
+@import "./team-colors.css";
+@import "./team-page.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin: 10px;
+}
+
+a {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-container a {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/* Navigation Menu */
+/* Navigation Menu */
+/* Navigation Menu */
+/* Navigation Menu */
+/* Navigation Menu */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    background-color: #333;
+    margin: 0;
+    height: 60px;
+}
+
+nav .logo {
+    margin-left: 20px;
+}
+
+nav img {
+    height: 35px;
+}
+
+.burger {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.burger .line-1 {
+    background-color: #fff;
+    padding: 2px;
+    width: 30px;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+
+.burger .line-2 {
+    background-color: #fff;
+    padding: 2px;
+    width: 50px;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+/* Hero Section */
+/* Hero Section */
+/* Hero Section */
+/* Hero Section */
+
+#home-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/backgrounds/hedman.png') no-repeat center center/cover;
+    min-height: 70vh;
+}
+
+#home-hero .img {
+    margin-top: 50px;
+}
+
+#home-hero .search {
+    margin-top: 25px;
+    border-radius: 25px;
+    padding: 10px 50px;
+}
+
+#home-hero p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+
+/* Popular Players Section */
+/* Popular Players Section */
+/* Popular Players Section */
+/* Popular Players Section */
+
+#popular-players h2 {
+    margin: 60px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline 8px solid red;
+}
+
+#popular-players .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* Player Cards */
+/* Player Cards */
+/* Player Cards */
+
+#popular-players .card {
+    background: #fff;
+    width: 270px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px;
+    transition: 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#popular-players .card-image {
+    background: red;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+#popular-players .card:hover {
+    transform: scale(1.1)
+}
+
+#popular-players .card-1 {
+    background: url('https://images.aftonbladet-cdn.se/v2/images/4dcf1aae-74c0-4ab0-aaba-f359f63adad1?fit=crop&format=auto&h=1019&q=50&w=1500&s=1e18bba19c338a0bbe475b2b990b691cf4b48d72') no-repeat center center/cover;
+}
+
+#popular-players .card-2 {
+    background: url('https://jetsnation.ca/wp-content/uploads/sites/5/2021/03/usa_today_12535156.0.jpg') no-repeat center center/cover;
+}
+
+#popular-players .card-3 {
+    background: url('https://puckprose.com/wp-content/uploads/getty-images/2016/04/1208693758.jpeg') no-repeat center center/cover;
+}
+
+#popular-players .card-4 {
+    background: url('https://media.ksdk.com/assets/KSDK/images/9e7b9f70-1ecd-4176-b7dc-3e8533fa29e8/9e7b9f70-1ecd-4176-b7dc-3e8533fa29e8_750x422.jpg') no-repeat center center/cover;
+}
+
+#popular-players .card-logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#popular-players p,
+h3 {
+    padding: 0px 5px;
+    text-align: center;
+}
+
+#popular-players h3 {
+    font-size: 2.5rem;
+}
+
+#popular-players .card-position {
+    margin-bottom: 15px;
+}
+
+#popular-players .btn {
+    margin-top: 10px;
+}
+
+#popular-players .btn-container {
+
+    height: 60px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popular-players .btn {
+    background-color: #013369;
+    padding: 15px 105px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.15)
+}
+
+/* TEAMS */
+/* TEAMS */
+/* TEAMS */
+/* TEAMS */
+/* TEAMS */
+
+#teams h2 {
+    margin: 60px 0 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline 8px solid red;
+
+}
+
+#teams .team {
+    height: 160px;
+    width: 160px;
+
+    margin: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+    transition: 0.5s ease;
+}
+
+#teams .team:hover {
+    transform: scale(1.1);
+}
+
+#teams .team img {
+    height: 100px;
+}
+
+#teams .conference-logo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teams .conference-logo img {
+    height: 200px;
+}
+
+#teams h3.division {
+    margin: 20px 0 20px 0;
+    font-size: 1.8rem;
+}
+
+/* Logo Adjustments */
+
+#teams .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+/* PLAYER PAGE */
+
+#player-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70vh;
+}
+
+#player-header .player-header-image {
+    width: 100%;
+    height: 100%;
+    background: url('/images/brady-test.png') no-repeat center center/cover;
+
+}
+
+
+
+.main-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.main-stats h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.main-stats p {
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 10px 50px;
+    font-weight: 100;
+}
+
+.main-stats>div {
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 100px;
+    background-color: #333;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .main-stats>div {
+        margin: 20px 40px;
+    }
+}

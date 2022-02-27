@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>NHL Stats | Get your NHL statistics here!</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/images/american-football.png"
+    />
+  </head>
+  <body>
+    <nav class="jets">
+      <a href="/index.html" class="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4346/4346024.png"
+          alt=""
+        />
+      </a>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+      </div>
+    </nav>
+    <section id="team-hero" class="jets-hero">
+      <img
+        src="http://loodibee.com/wp-content/uploads/nhl-winnipeg-jets-logo.png"
+        alt=""
+      />
+      <p class="city jets">WINNIPEG</p>
+      <h1>JETS</h1>
+    </section>
+    <section class="team-mainstats">
+      <div id="mainstats">
+        <h2 id="games-played"></h2>
+        <p class="jets">GAMES</p>
+      </div>
+      <div id="mainstats">
+        <h2 id="wins"></h2>
+        <p class="jets">WINS</p>
+      </div>
+      <div id="mainstats">
+        <h2 id="losses"></h2>
+        <p class="jets">LOSSES</p>
+      </div>
+    </section>
+
+    <div id="faceoffs-stats">
+      <div class="faceoffs-total-wrap jets alt">
+        <img src="/images/icons/faceoff-white.png" alt="" />
+        <div class="faceoffs-total">
+          <h3 id="faceOffsTaken"></h3>
+          <p>TOTAL FACEOFFS</p>
+        </div>
+        <div class="faceoffs-won-lost-wrap jets alt">
+          <div class="faceoffs-won">
+            <h3 id="faceOffsWon"></h3>
+            <p>WON</p>
+          </div>
+          <div class="faceoffs-lost">
+            <h3 id="faceOffsLost"></h3>
+            <p>LOST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="powerplay-stats-wrap">
+      <h2>POWERPLAY</h2>
+      <div class="powerplay-stats jets alt">
+        <h3 id="powerPlayTotal"></h3>
+        <p>POWERPLAYS</p>
+      </div>
+      <div class="powerplay-stats jets alt">
+        <h3 id="powerPlayPercentage"></h3>
+        <p>PP%</p>
+      </div>
+      <div class="powerplay-stats jets alt">
+        <h3 id="powerPlayGoals">hej</h3>
+        <p>PP GOALS</p>
+      </div>
+      <div class="powerplay-stats jets alt">
+        <h3 id="powerPlayGoalsAgainst"></h3>
+        <p>PP GOALS AGAINST</p>
+      </div>
+    </section>
+  </body>
+  <footer class="jets"></footer>
+  <script src="./scripts/jets-stats.js"></script>
+</html>
